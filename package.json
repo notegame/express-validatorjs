@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/notegame/express-validatorjs"
   },
-  "author": "Theeradech Dechasit",
+  "author": "Theeradech Dechasit <notegamer@hotmail.com>",
   "license": "MIT",
   "keywords": [
     "expressjs",
