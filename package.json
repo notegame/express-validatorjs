@@ -1,10 +1,14 @@
 {
-  "name": "express-validatorjs",
+  "name": "validatorjs-expressjs",
   "description": "Validation library inspired by Laravel's Validator and support for express middleware",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notegame/express-validatorjs"
   },
   "author": "Theeradech Dechasit",
   "license": "MIT",
