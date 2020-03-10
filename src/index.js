@@ -8,7 +8,7 @@ function validate(validateObj) {
 
         if(vld.Validator){
             Validator = vld.Validator
-            return 
+            return next(); 
         }
 
         const rules = vld.rules(req);
