@@ -75,7 +75,7 @@ app.listen(3000, function() {
 
 ## License
 
-Copyright © 2012-2019 David Tang Released under the MIT license
+Copyright © 2020 Released under the MIT license
 
 ## Credits
 
