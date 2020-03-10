@@ -4,13 +4,13 @@ Doc [validatorjs](https://github.com/skaterdav85/validatorjs)
 
 
 ```sh
-$ npm install express-validatorjs
+$ npm install validatorjs-expressjs
 ```
 
 or
 
 ```sh
-$ yarn add express-validatorjs
+$ yarn add validatorjs-expressjs
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ $ yarn add express-validatorjs
 
 ```javascript
 const express = require('express')
-const validator = require('express-validatorjs')
+const validator = require('validatorjs-expressjs')
 const app = express()
 const Validator = require("validatorjs");
 
