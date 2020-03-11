@@ -72,6 +72,72 @@ app.listen(3000, function() {
 });
 ```
 
+### Custom Field Label
+
+```javascript
+app.post("/products", [
+  validator({
+    rules: function(req) {
+      return {
+        firstName: "required",
+        lastName: "required"
+      };
+    },
+    //Custom field label
+    attributeNames: req => {
+      return {
+        firstName: "First Name",
+        lastName: "Last Name",
+      };
+    }
+  }),
+  function(req, res, next) {
+    res.json({ message: "submit products ok" });
+  }
+]);
+```
+
+Errot Response
+
+```json
+{
+  "message" : "The First Name field is required."
+}
+```
+
+
+###  Separate Request file
+
+src/request/product_create_request.js
+```javascript
+module.exports = {
+  //Rule
+  rules: function(req) {
+    return {
+      firstName: "required",
+      lastName: "required"
+    };
+  },
+  //Custom field label
+  attributeNames: req => {
+    return {
+      firstName: "First Name",
+      lastName: "Last Name",
+    };
+  }
+}
+```
+
+```javascript
+const productCreateRequest = require("./request/product-create.request");
+
+app.post("/products", [
+  validator(productCreateRequest),
+  function(req, res, next) {
+    res.json({ message: "submit products ok" });
+  }
+]);
+```
 
 ## License
 
