@@ -97,7 +97,7 @@ app.post("/products", [
 ]);
 ```
 
-Errot Response
+Error Response
 
 ```json
 {
@@ -106,7 +106,7 @@ Errot Response
 ```
 
 
-###  Separate Request file
+###  Separate Request File
 
 src/request/product_create_request.js
 ```javascript
